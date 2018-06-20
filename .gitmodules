@@ -10,9 +10,6 @@
 [submodule "source/minecraft-roguelike"]
 	path = source/minecraft-roguelike
 	url = https://github.com/supersaix/minecraft-roguelike
-[submodule "source/minecraft-betterfoliage"]
-	path = source/minecraft-betterfoliage
-	url = https://github.com/supersaix/minecraft-betterfoliage
 [submodule "source/minecraft-familiarfauna"]
 	path = source/minecraft-familiarfauna
 	url = https://github.com/supersaix/minecraft-familiarfauna
