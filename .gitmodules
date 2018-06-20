@@ -16,3 +16,6 @@
 [submodule "source/minecraft-primitive"]
 	path = source/minecraft-primitive
 	url = https://github.com/supersaix/minecraft-primitive
+[submodule "shaderpacks/minecraft-chocapic13-shaders"]
+	path = shaderpacks/minecraft-chocapic13-shaders
+	url = https://github.com/supersaix/minecraft-chocapic13-shaders
