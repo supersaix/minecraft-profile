@@ -22,3 +22,6 @@
 [submodule "source/minecraft-modpack"]
 	path = source/minecraft-modpack
 	url = https://github.com/supersaix/minecraft-modpack
+[submodule "source/minecraft-caveroot"]
+	path = source/minecraft-caveroot
+	url = https://github.com/supersaix/minecraft-caveroot
