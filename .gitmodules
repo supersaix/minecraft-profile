@@ -19,3 +19,6 @@
 [submodule "shaderpacks/minecraft-chocapic13-shaders"]
 	path = shaderpacks/minecraft-chocapic13-shaders
 	url = https://github.com/supersaix/minecraft-chocapic13-shaders
+[submodule "source/minecraft-modpack"]
+	path = source/minecraft-modpack
+	url = https://github.com/supersaix/minecraft-modpack
