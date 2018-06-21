@@ -21,7 +21,6 @@ If ($Init) {
         Write-Host "Complete Init for" $_
     }
 
-
     Set-Location ".."
 
     Write-Host "Finished Init" -ForegroundColor Green
