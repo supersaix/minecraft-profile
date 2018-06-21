@@ -8,11 +8,11 @@ SuperSaix's Minecraft profile contains mods (including an inter-mod compatibilit
 ## Installation
 1. Install [Forge for Minecraft 1.12.2](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html).
 2. Download and add the appropriate v1.12.2 jars to /mods/:
- * [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage/files)
- * [Hwyla](https://minecraft.curseforge.com/projects/hwyla/files)
- * [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator/files)
- * [Optifine](https://optifine.net/downloads)
- * [Mantle](https://minecraft.curseforge.com/projects/mantle/files)
- * [MapWriter 2](https://minecraft.curseforge.com/projects/mapwriter-2/files)
- * [Venomous Fangs](https://minecraft.curseforge.com/projects/venomous-fangs/files)
+ * [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage/files) (Recommended)
+ * [Hwyla](https://minecraft.curseforge.com/projects/hwyla/files) (Recommended)
+ * [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator/files) (Required)
+ * [Optifine](https://optifine.net/downloads) (Required)
+ * [Mantle](https://minecraft.curseforge.com/projects/mantle/files) (Required)
+ * [MapWriter 2](https://minecraft.curseforge.com/projects/mapwriter-2/files) (Recommended)
+ * [Venomous Fangs](https://minecraft.curseforge.com/projects/venomous-fangs/files) (Required)
 3. Run Compile-ModSource.ps1 to build the mod sources in the /source/ directory. Currently you'll have to manually move the outputs of these builds to the /mods/ directory. If this is your first time, you'll need to run the script with the -Init parameter first.
