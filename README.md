@@ -5,11 +5,19 @@ The goal of this project is to define a comprehensive "modpack" in code. You'll 
 
 SuperSaix's Minecraft profile contains mods (including an inter-mod compatibility mod), configuration for those mods, a resource pack and a shader pack all maintained in this repository and the repositories that are its submodules. These repositories are maintained by the SuperSaix organization on Git-Hub: https://github.com/supersaix
 
+Mods forked for SuperSaix's profile:
+
+* minecraft-caveroot (Cave Root)
+* minecraft-familiarfauna (Familiar Fauna)
+* minecraft-mineralogy (Mineralogy)
+* minecraft-natura (Natura)
+* minecraft-primitive (Primitive Mobs)
+* minecraft-roguelike (Roguelike Dungeons)
+
 ## Installation
 1. Install [Forge for Minecraft 1.12.2](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html).
 2. Download and add the appropriate v1.12.2 jars to /mods/:
  * [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage/files) (Recommended)
- * [Cave Root](https://minecraft.curseforge.com/projects/cave-root/files) (Recommended)
  * [Hwyla](https://minecraft.curseforge.com/projects/hwyla/files) (Recommended)
  * [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator/files) (Required)
  * [Optifine](https://optifine.net/downloads) (Required)
