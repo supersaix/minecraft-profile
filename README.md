@@ -19,6 +19,7 @@ Mods forked for SuperSaix's profile:
 2. Download and add the appropriate v1.12.2 jars to /mods/:
  * [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage/files) (Recommended)
  * [Hwyla](https://minecraft.curseforge.com/projects/hwyla/files) (Recommended)
+ * [kjlib](https://minecraft.curseforge.com/projects/kjlib/files) (Required)
  * [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator/files) (Required)
  * [Optifine](https://optifine.net/downloads) (Required)
  * [Mantle](https://minecraft.curseforge.com/projects/mantle/files) (Required)
