@@ -10,3 +10,4 @@ SuperSaix's 1.12.2 Minecraft profile.
  * [Optifine](https://optifine.net/downloads)
  * [Mantle](https://minecraft.curseforge.com/projects/mantle/files)
  * [MapWriter 2](https://minecraft.curseforge.com/projects/mapwriter-2/files)
+ * [Venomous Fangs](https://minecraft.curseforge.com/projects/venomous-fangs/files)
