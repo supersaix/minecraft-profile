@@ -14,6 +14,8 @@ Mods forked for SuperSaix's profile:
 * minecraft-primitive (Primitive Mobs) This mod adds a number of new friendly and enemy mobs including Grove Sprites, Treasure Slimes and Spider Families!
 * minecraft-roguelike (Roguelike Dungeons) This mod generates expansive new dungeons throughout the Minecraft world!
 
+As well the John Smith Techinician's Remix resourcepack has been forked and includes resources for the forked mods as well as Minecraft to provide a cohesive Minecraft experience!
+
 ## Installation
 1. Install [Forge for Minecraft 1.12.2](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html).
 2. Download and add the appropriate v1.12.2 jars to /mods/:
