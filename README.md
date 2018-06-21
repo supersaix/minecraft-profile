@@ -9,6 +9,7 @@ SuperSaix's Minecraft profile contains mods (including an inter-mod compatibilit
 1. Install [Forge for Minecraft 1.12.2](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html).
 2. Download and add the appropriate v1.12.2 jars to /mods/:
  * [Better Foliage](https://minecraft.curseforge.com/projects/better-foliage/files) (Recommended)
+ * [Cave Root](https://minecraft.curseforge.com/projects/cave-root/files) (Recommended)
  * [Hwyla](https://minecraft.curseforge.com/projects/hwyla/files) (Recommended)
  * [Open Terrain Generator](https://minecraft.curseforge.com/projects/open-terrain-generator/files) (Required)
  * [Optifine](https://optifine.net/downloads) (Required)
