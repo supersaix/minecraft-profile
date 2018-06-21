@@ -61,7 +61,7 @@ Else {
                 if ($_.Name.Contains($IgnoreFiles[0]) -Or $_.Name.Contains($IgnoreFiles[1]) -Or $_.Name.Contains($IgnoreFiles[2])) {
                     Write-Host "Ignored file" $_
                 } Else {
-                    Copy-Item -Path $_.FullName -Destination "${PSScriptRoot}\builds" -Recurse -Force
+                    Copy-Item -Path $_.FullName -Destination "${PSScriptRoot}\mods" -Recurse -Force
                 }
             }
 
@@ -73,7 +73,7 @@ Else {
                 if ($_.Name.Contains($IgnoreFiles[0]) -Or $_.Name.Contains($IgnoreFiles[1]) -Or $_.Name.Contains($IgnoreFiles[2])) {
                     Write-Host "Ignored file" $_
                 } Else {
-                    Copy-Item -Path $_.FullName -Destination "${PSScriptRoot}\builds" -Recurse -Force
+                    Copy-Item -Path $_.FullName -Destination "${PSScriptRoot}\mods" -Recurse -Force
                 }
             }
         }
