@@ -10,7 +10,7 @@ If ($Init) {
 
     Set-Location ".\source\"
     Get-ChildItem -Directory | ForEach-Object {
-        Write-Host "Initializing" $_
+        Write-Host "`nInitializing" $_
         Set-Location $_
         $InitProcess = Start-Process -PassThru -NoNewWindow .\gradlew setupDecompWorkspace
         $InitProcess.WaitForExit()
@@ -23,4 +23,17 @@ If ($Init) {
     Set-Location ".."
 
     Write-Host "Finished Init" -ForegroundColor Green
+}
+
+Else {
+    Set-Location ".\source\"
+    Get-ChildItem -Directory | ForEach-Object {
+        Write-Host "`nBuilding" $_
+        Set-Location $_
+        Start-Process -PassThru -NoNewWindow .\gradlew build
+        Set-Location ".."
+    }
+    Set-Location ".."
+
+    Wait-Process -Name gradlew
 }
