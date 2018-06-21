@@ -7,12 +7,12 @@ SuperSaix's Minecraft profile contains mods (including an inter-mod compatibilit
 
 Mods forked for SuperSaix's profile:
 
-* minecraft-caveroot (Cave Root)
-* minecraft-familiarfauna (Familiar Fauna)
-* minecraft-mineralogy (Mineralogy)
-* minecraft-natura (Natura)
-* minecraft-primitive (Primitive Mobs)
-* minecraft-roguelike (Roguelike Dungeons)
+* minecraft-caveroot (Cave Root) This mod adds several new plants to the game that grow exclusively in caves and provide food, light, and sticks to the cave-dwelling minecrafter.
+* minecraft-familiarfauna (Familiar Fauna) This mod adds a number of new (friendly) mobs to the game including Deer, Turkeys and Pixies. 
+* minecraft-mineralogy (Mineralogy) This mod overhauls Minecraft's mining experience by replacing the usual "stone" with "real-world geology".
+* minecraft-natura (Natura) This mod adds new trees, bushes, mobs, tools, and more!
+* minecraft-primitive (Primitive Mobs) This mod adds a number of new friendly and enemy mobs including Grove Sprites, Treasure Slimes and Spider Families!
+* minecraft-roguelike (Roguelike Dungeons) This mod generates expansive new dungeons throughout the Minecraft world!
 
 ## Installation
 1. Install [Forge for Minecraft 1.12.2](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html).
