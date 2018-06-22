@@ -13,6 +13,13 @@ Function Parse-Replace([string]$File, [string]$Key, [string]$Value) {
     $Content | Out-File -FilePath $File -Force
 }
 
+Function Parse-ReplaceJson([string]$File, [string]$Key, [string]$Value) {
+    $Content = Get-Content $File
+    $Content = $Content -Replace "${Key}:`".*`"", "${Key}:`"${Value}`""
+    Write-Host "Configured ${File}:`n`t'${Key}' for new value '${Value}'."
+    $Content | Out-File -FilePath $File -Force
+}
+
 Function Parse-ReplaceOccurence([string]$File, [string]$Key, [int]$Occurence, [string]$Value) {
     $Content = Get-Content $File -Raw
 
@@ -20,9 +27,26 @@ Function Parse-ReplaceOccurence([string]$File, [string]$Key, [int]$Occurence, [s
     $Position = $Occurences[$Occurence].Index
     $Length = $Occurences[$Occurence].Length
 
-    $Content = $Content -Replace $Content.Substring($Position, $Length), "${Key}=${Value}"
+    $Replacement = "${Key}=${Value}"
+
+    $Content = "{0}{1}{2}" -f $Content.Substring(0, $Position), $Replacement, $Content.Substring($Position + $Content.Substring($Position, $Length).Length)
 
     Write-Host "Configured ${File}:`n`t'${Key}' for new value '${Value}'."
+    $Content | Out-File -FilePath $File -Force
+}
+
+Function Parse-ReplaceOccurenceJson([string]$File, [string]$Key, [int]$Occurence, [string]$Value) {
+    $Content = Get-Content $File -Raw
+
+    $Occurences = [Regex]::Matches($Content, "${Key}:`".*`"")
+    $Position = $Occurences[$Occurence].Index
+    $Length = $Occurences[$Occurence].Length
+
+    $Replacement = "${Key}:`"${Value}`""
+
+    $Content = "{0}{1}{2}" -f $Content.Substring(0, $Position), $Replacement, $Content.Substring($Position + $Content.Substring($Position, $Length).Length)
+
+    Write-Host "Occurence configured ${File}:`n`t'${Key}' for new value '${Value}'."
     $Content | Out-File -FilePath $File -Force
 }
 
@@ -97,6 +121,7 @@ If ($Debug) {
 #Configure the target config directories
 $ModConfigDirectory = "./config"
 $RoguelikeConfig = "${ModConfigDirectory}/roguelike_dungeons/roguelike.cfg"
+$RoguelikeSpawnersConfig = "${ModConfigDirectory}/roguelike_dungeons/settings/spawners.json"
 $FamiliarFaunaConfig = "${ModConfigDirectory}/familiarfauna/config.cfg"
 $CaveRootConfig = "${ModConfigDirectory}/caveroot.cfg"
 $MineralogyConfig = "${ModConfigDirectory}/mineralogy.cfg"
@@ -107,10 +132,11 @@ $PrimitiveMobsConfig = "${ModConfigDirectory}/primitivemobs.cfg"
 $RoguelikeDungeonSpawnProb = Config-RoguelikeSpawnProb($MasterConfiguration["[Roguelike]"].DungeonSpawnProb)
 Parse-Replace $RoguelikeConfig 'spawnFrequency' $RoguelikeDungeonSpawnProb 
 Parse-Replace $RoguelikeConfig 'generous' $MasterConfiguration["[Roguelike]"].DungeonGenerous
-Parse-Replace $RoguelikeConfig 'levelScatter' $MasterConfiguration["[Roguelike]"].DungeonLevelScatter
-Parse-Replace $RoguelikeConfig 'levelRange' $MasterConfiguration["[Roguelike]"].DungeonLevelRange
-Parse-Replace $RoguelikeConfig 'levelMaxRooms' $MasterConfiguration["[Roguelike]"].DungeonMaximumRooms
 Parse-Replace $RoguelikeConfig 'looting' $MasterConfiguration["[Roguelike]"].DungeonLooting
+
+Parse-ReplaceOccurenceJson $RoguelikeSpawnersConfig '"equip"' 0 $MasterConfiguration["[Roguelike]"].DungeonZombiesEquip
+Parse-ReplaceOccurenceJson $RoguelikeSpawnersConfig '"equip"' 1 $MasterConfiguration["[Roguelike]"].DungeonSkeletonsEquip
+Parse-ReplaceOccurenceJson $RoguelikeSpawnersConfig '"equip"' 2 $MasterConfiguration["[Roguelike]"].DungeonSkeletonsEquip
 
 Parse-ReplaceOccurence $CaveRootConfig 'spawnProb' 0 $MasterConfiguration["[WorldGeneration]"].CaveRootSpawnProb
 Parse-ReplaceOccurence $CaveRootConfig 'spawnProb' 1 $MasterConfiguration["[WorldGeneration]"].DriedRootSpawnProb
