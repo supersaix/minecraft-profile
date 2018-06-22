@@ -8,8 +8,12 @@
 		
 		{"level": [1,2,3,4], "type" : "SPAWNER", "weight" : 2},
 		
-		{"level": [1,2,3], "type" : "TOMB", "weight" : 2},
+		{"level": [1,2,3], "type" : "TOMB", "weight" : 4},
+		{"level": [1,2,3], "type" : "SEWERARCH", "weight" : 2},
+		{"level": [1,2,3], "type" : "SEWERDOOR", "weight" : 2},
+		{"level": [1,2,3], "type" : "SEWERDRAIN", "weight" : 2},
 
+		{"level": [2,3], "type" : "ARROW", "weight" : 1},
 		{"level": [2,3], "type" : "CELL", "weight" : 2},
 		{"level": [2,3], "type" : "SKULL", "weight" : 2},
 
@@ -23,7 +27,7 @@
 		{"level": 3, "type" : "MOSSYARCH", "arch" : true},
 		{"level": 3, "type" : "SILVERFISH", "weight" : 1},
 		{"level": 3, "type" : "MUSHROOM", "weight" : 2},
-		{"level": 3, "type" : "ARROW", "weight" : 1},
+		
 		
 		{"level": 4, "type" : "NETHERARCH", "arch" : true},
 		{"level": 4, "type" : "NETHERWART", "weight" : 1},

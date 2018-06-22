@@ -1,0 +1,8 @@
+{
+	"name" : "supersaix:loot_tables",
+	"loot_tables" : [
+		{"level" : [0, 1, 2], "table" : "minecraft:chests/simple_dungeon"},
+		{"level" : 3, "table" : "minecraft:chests/jungle_temple"},
+		{"level" : 4, "table" : "minecraft:chests/nether_bridge"}
+	]
+}

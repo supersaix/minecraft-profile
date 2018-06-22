@@ -9,6 +9,7 @@
 		"supersaix:rooms",
 		"supersaix:layout",
 		"supersaix:segments",
-		"supersaix:theme"
+		"supersaix:theme",
+		"supersaix:loot_tables"
 	]
 }
