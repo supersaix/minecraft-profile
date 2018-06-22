@@ -31,7 +31,7 @@ Function Parse-ReplaceOccurence([string]$File, [string]$Key, [int]$Occurence, [s
 
     $Content = "{0}{1}{2}" -f $Content.Substring(0, $Position), $Replacement, $Content.Substring($Position + $Content.Substring($Position, $Length).Length)
 
-    Write-Host "Configured ${File}:`n`t'${Key}' for new value '${Value}'."
+    Write-Host "Occurence configured ${File}:`n`t'${Key}' for new value '${Value}'."
     $Content | Out-File -FilePath $File -Force
 }
 
