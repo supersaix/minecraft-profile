@@ -1,0 +1,44 @@
+{
+	"name" : "supersaix:spawners",
+	"spawners" : [
+		{
+			"type" : "ZOMBIE",
+			"potentials" : [
+				{
+					"name" : "minecraft:zombie",
+					"equip" : "true"
+				}
+			],
+			"level" : [0, 1, 2, 3, 4]
+		},
+		{
+			"type" : "SPIDER",
+			"potentials" : [
+				{
+					"name" : "minecraft:spider"
+				}
+			],
+			"level" : [0, 1, 2, 3, 4]
+		},
+		{
+			"type" : "SKELETON",
+			"potentials" : [
+				{
+					"name" : "primitivemobs:skeleton_warrior",
+					"weight" : 5
+				},
+				{
+					"name" : "minecraft:wither_skeleton",
+					"equip" : "true",
+					"weight" : 1
+				},
+				{
+					"name" : "minecraft:skeleton",
+					"equip" : "true",
+					"weight" : 5
+				}
+			],
+			"level" : [0, 1, 2, 3, 4]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"name" : "supersaix:layout",
+	"num_rooms" : [18, 24, 32, 48, 48],
+	"scatter" : [18, 24, 24, 24, 24],
+	"layouts" : [
+		{"level" : [0, 1, 2, 3, 4], "type" : "mst"}
+	]
+}

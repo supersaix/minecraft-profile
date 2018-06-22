@@ -1,0 +1,14 @@
+{
+	"name" : "supersaix:main",
+	"exclusive" : true,
+	"criteria" : {
+		"dimensionWL":[0]
+	},
+	"inherit" : [
+		"supersaix:spawners",
+		"supersaix:rooms",
+		"supersaix:layout",
+		"supersaix:segments",
+		"supersaix:theme"
+	]
+}
