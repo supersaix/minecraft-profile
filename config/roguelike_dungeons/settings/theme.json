@@ -63,16 +63,14 @@
 				"walls" : {
 					"type" : "WEIGHTED",
 					"data" : [
-						{"type" : "METABLOCK", "data" : {"name" : "gravel"}, "weight" : 2},
 						{"type" : "METABLOCK", "data" : {"name" : "monster_egg", "meta" : 1}, "weight" : 1},
 						{"type" : "METABLOCK", "data" : {"name" : "monster_egg", "meta" : 3}, "weight" : 1},
-						{"type" : "METABLOCK", "data" : {"name" : "stonebrick", "meta" : 1}, "weight" : 1},
-						{"type" : "METABLOCK", "data" : {"name" : "stonebrick", "meta" : 2}, "weight" : 1},
-						{"type" : "METABLOCK", "data" : {"name" : "cobblestone"}, "weight" : 5},
-						{"type" : "METABLOCK", "data" : {"name" : "mossy_cobblestone"}, "weight" : 4}
+						{"type" : "METABLOCK", "data" : {"name" : "obsidian"}, "weight" : 1},
+						{"type" : "METABLOCK", "data" : {"name" : "mineralogy:basalt"}, "weight" : 7}
 					]
 				},
-				"stair" : {"type" : "METABLOCK", "data" : {"name" : "stone_stairs"}},
+				"pillar" : {"type" : "METABLOCK", "data" : {"name" : "natura:overworld_planks", "meta" : 2}},
+				"stair" : {"type" : "METABLOCK", "data" : {"name" : "natura:overworld_stairs_amaranth"}},
 				"door" : {"name" : "iron_door"}
 			}
 		},
