@@ -4,9 +4,6 @@
 [submodule "source/minecraft-natura"]
 	path = source/minecraft-natura
 	url = https://github.com/supersaix/minecraft-natura
-[submodule "source/minecraft-mineralogy"]
-	path = source/minecraft-mineralogy
-	url = https://github.com/supersaix/minecraft-mineralogy
 [submodule "source/minecraft-roguelike"]
 	path = source/minecraft-roguelike
 	url = https://github.com/supersaix/minecraft-roguelike
