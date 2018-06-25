@@ -10,14 +10,14 @@ Function Parse-Replace([string]$File, [string]$Key, [string]$Value) {
     $Content = Get-Content $File
     $Content = $Content -Replace "${Key}=.*", "${Key}=${Value}"
     Write-Host "Configured ${File}:`n`t'${Key}' for new value '${Value}'."
-    $Content | Out-File -FilePath $File -Force
+    $Content | Out-File -FilePath $File -Force -Encoding utf8
 }
 
 Function Parse-ReplaceJson([string]$File, [string]$Key, [string]$Value) {
     $Content = Get-Content $File
     $Content = $Content -Replace "${Key}:`".*`"", "${Key}:`"${Value}`""
     Write-Host "Configured ${File}:`n`t'${Key}' for new value '${Value}'."
-    $Content | Out-File -FilePath $File -Force
+    $Content | Out-File -FilePath $File -Force -Encoding utf8
 }
 
 Function Parse-ReplaceOccurence([string]$File, [string]$Key, [int]$Occurence, [string]$Value) {
@@ -32,7 +32,7 @@ Function Parse-ReplaceOccurence([string]$File, [string]$Key, [int]$Occurence, [s
     $Content = "{0}{1}{2}" -f $Content.Substring(0, $Position), $Replacement, $Content.Substring($Position + $Content.Substring($Position, $Length).Length)
 
     Write-Host "Occurence configured ${File}:`n`t'${Key}' for new value '${Value}'."
-    $Content | Out-File -FilePath $File -Force
+    $Content | Out-File -FilePath $File -Force -Encoding utf8
 }
 
 Function Parse-ReplaceOccurenceJson([string]$File, [string]$Key, [int]$Occurence, [string]$Value) {
@@ -47,7 +47,7 @@ Function Parse-ReplaceOccurenceJson([string]$File, [string]$Key, [int]$Occurence
     $Content = "{0}{1}{2}" -f $Content.Substring(0, $Position), $Replacement, $Content.Substring($Position + $Content.Substring($Position, $Length).Length)
 
     Write-Host "Occurence configured ${File}:`n`t'${Key}' for new value '${Value}'."
-    $Content | Out-File -FilePath $File -Force
+    $Content | Out-File -FilePath $File -Force -Encoding utf8
 }
 
 Function Config-RoguelikeSpawnProb([string]$Value) {

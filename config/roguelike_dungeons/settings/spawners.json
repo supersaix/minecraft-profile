@@ -1,4 +1,4 @@
-{
+﻿{
 	"name" : "supersaix:spawners",
 	"spawners" : [
 		{
@@ -6,7 +6,7 @@
 			"potentials" : [
 				{
 					"name" : "minecraft:zombie",
-					"equip":"true"
+					"equip":"True"
 				}
 			],
 			"level" : [0, 1, 2, 3, 4]
@@ -34,12 +34,12 @@
 				},
 				{
 					"name" : "minecraft:wither_skeleton",
-					"equip":"true",
+					"equip":"True",
 					"weight" : 1
 				},
 				{
 					"name" : "minecraft:skeleton",
-					"equip":"true",
+					"equip":"True",
 					"weight" : 6
 				}
 			],
@@ -47,3 +47,8 @@
 		}
 	]
 }
+
+
+
+
+
